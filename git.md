@@ -178,14 +178,25 @@ git 如果没有add，那么文件的修改就不会加入到暂存区，也就�
 <div align="center">
     <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/b27d1276-bdaa-4ab9-926e-e67b78cfbf46" alt="分支合并冲突">
 </div>  
+合并过程如下，从蓝色的状态变为红色的状态：
+<div align="center">
+    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/06805367-3a06-4213-a85d-3489b3cd9bd9" alt="合并指针">
+</div>  
 
 接下来就合并成功了。  
 <div align="center">
     <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/5b5340c5-270f-4a55-8d6c-3312b5734728" alt="分支合并冲突">  
 </div>  
 
-总结：将git合并失败的文件手动编辑为我们想要的内容，再提交。  
+**总结：将git合并失败的文件手动编辑为我们想要的内容，再提交。**  
 
+### 5.3 分支管理策略
+在团队开发过程中，master分支是最稳定的分支(发行版本)，一般不用来直接开发，而是在新的分支上进行开发，然后合并到master分支。  
+
+合并过程当中要常用`--no-ff`,意思是不采用 fast forward模式，在合并过程中留下历史记录。  
+
+### 5.4 bug分支
+软件开发过程中怎么修复bug？
 
 ## 遇到了问题：
 在将本地仓库同步到远程仓库的时候，发现进行remote add连接之后，push命令不能直接使用，错误信息显示必需先pull一下，把GitHub上的文件拉下来，pull仍然会报错，这是因为在创建repo的时候添加了readme文件，所以不是一个空的分支，必须把两个不相关的库进行合并才可以进行下一步操作。  
