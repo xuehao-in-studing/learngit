@@ -110,7 +110,7 @@ git 如果没有add，那么文件的修改就不会加入到暂存区，也就�
 ## 五、分支管理
 为什么需要分支？如果你和你的同事同时在完成一个项目，但是需要进度同步，那么你们就必须同时开发，并且进度和功能不能够互相影响。这时就可以各自创建各自的分支进行开发。
 ### 5.1 创建与合并分支
-**创建并切换分支**：`git checkout -b dev`   
+**创建并切换分支**：`git checkout -b dev`或者`git switch -c dev`   
 这个命令相当于创建并切换，切换到dev分支。  
 等于：`git branch dev`+`git checkout/switch dev`  
 
@@ -132,7 +132,11 @@ git 如果没有add，那么文件的修改就不会加入到暂存区，也就�
 因此，可以通过的分支合并来合并两个分支的工作内容。  
 
 **合并分支**：`git merge dev`  
-合并指定分支到当前分支上。
+合并指定分支到当前分支上。  
+<div align="center">
+    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/71e556ab-22d6-4ceb-a59b-03bde2a4034e" alt="分支合并">
+</div>
+ 
 
 **删除分支**：`git branch -d <name>`  
 在合并分支之后就可以放心删除分支了。
