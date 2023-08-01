@@ -2,7 +2,7 @@
  * @Author: Jeason 19938943480@163.com
  * @Date: 2023-08-01 12:28:20
  * @LastEditors: Jeason 19938943480@163.com
- * @LastEditTime: 2023-08-01 13:48:47
+ * @LastEditTime: 2023-08-01 13:59:28
  * @FilePath: \undefinede:\learngit\git.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -156,10 +156,14 @@ git 如果没有add，那么文件的修改就不会加入到暂存区，也就�
 </div>
 上图是分支一发生修改后的情况。  
 <div align="center">
-    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/9deb7351-f64d-4330-8ca5-b76e9c74bfae" alt="分之二">
+    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/9deb7351-f64d-4330-8ca5-b76e9c74bfae" alt="分支二">
 </div>  
-上图是分支二修改后的情况，可以看到两个
+上图是分支二修改后的情况，可以看到两个的新文件不同。   
 
+每个分支在不同的文件上进行修改，然后进行合并是可以的：  
+<div align="center">
+    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/7f076786-3389-48e9-b2f7-6d1d513e7f0b" alt="分支合并">
+</div>  
 
 ## 遇到了问题：
 在将本地仓库同步到远程仓库的时候，发现进行remote add连接之后，push命令不能直接使用，错误信息显示必需先pull一下，把GitHub上的文件拉下来，pull仍然会报错，这是因为在创建repo的时候添加了readme文件，所以不是一个空的分支，必须把两个不相关的库进行合并才可以进行下一步操作。  
