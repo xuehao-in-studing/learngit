@@ -2,7 +2,7 @@
  * @Author: Jeason 19938943480@163.com
  * @Date: 2023-08-01 12:28:20
  * @LastEditors: Jeason 19938943480@163.com
- * @LastEditTime: 2023-08-01 13:39:33
+ * @LastEditTime: 2023-08-01 13:48:47
  * @FilePath: \undefinede:\learngit\git.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -151,7 +151,14 @@ git 如果没有add，那么文件的修改就不会加入到暂存区，也就�
 
 ### 5.2 解决冲突
 如果同时创建了多个分支，并且多个分支上同时发生提交(add)修改暂存区之后，就无法直接合并，这时出现冲突。
-
+<div align="center">
+    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/b6907819-56a4-4071-9b38-8a86ed21849b" alt="分支一">
+</div>
+上图是分支一发生修改后的情况。  
+<div align="center">
+    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/9deb7351-f64d-4330-8ca5-b76e9c74bfae" alt="分之二">
+</div>  
+上图是分支二修改后的情况，可以看到两个
 
 
 ## 遇到了问题：
