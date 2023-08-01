@@ -1,3 +1,11 @@
+<!--
+ * @Author: Jeason 19938943480@163.com
+ * @Date: 2023-08-01 12:28:20
+ * @LastEditors: Jeason 19938943480@163.com
+ * @LastEditTime: 2023-08-01 13:39:33
+ * @FilePath: \undefinede:\learngit\git.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 # git的使用  
 ## 一、创建版本库
 步骤(从新建文件夹开始)：
@@ -140,6 +148,9 @@ git 如果没有add，那么文件的修改就不会加入到暂存区，也就�
 
 **删除分支**：`git branch -d <name>`  
 在合并分支之后就可以放心删除分支了。
+
+### 5.2 解决冲突
+如果同时创建了多个分支，并且多个分支上同时发生提交(add)修改暂存区之后，就无法直接合并，这时出现冲突。
 
 
 
