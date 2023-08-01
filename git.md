@@ -2,7 +2,7 @@
  * @Author: Jeason 19938943480@163.com
  * @Date: 2023-08-01 12:28:20
  * @LastEditors: Jeason 19938943480@163.com
- * @LastEditTime: 2023-08-01 13:59:28
+ * @LastEditTime: 2023-08-01 14:30:12
  * @FilePath: \undefinede:\learngit\git.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -150,7 +150,8 @@ git 如果没有add，那么文件的修改就不会加入到暂存区，也就�
 在合并分支之后就可以放心删除分支了。
 
 ### 5.2 解决冲突
-如果同时创建了多个分支，并且多个分支上同时发生提交(add)修改暂存区之后，就无法直接合并，这时出现冲突。
+
+**多个分支在不同的文件上进行更改并提交(add and commit)**
 <div align="center">
     <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/b6907819-56a4-4071-9b38-8a86ed21849b" alt="分支一">
 </div>
@@ -164,6 +165,27 @@ git 如果没有add，那么文件的修改就不会加入到暂存区，也就�
 <div align="center">
     <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/7f076786-3389-48e9-b2f7-6d1d513e7f0b" alt="分支合并">
 </div>  
+
+---  
+**多个分支在同一个文件更改并提交**  
+
+如果几个分支(branch1 and branch2)都同时在一个文件(newbranch.txt)上进行了修改并保存分支(add and commit)，那么在合并时会发生冲突，如下图所示：  
+<div align="center">
+    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/5ebf1330-938b-4955-8ef5-7240c08565a8" alt="分支合并冲突">
+</div>  
+这时候git会显示不同分支的更改，并需要做出选择，或者把这些全部删除重新更新，相当于在branch2上又做出了更改，接下来就可以合并。  
+
+<div align="center">
+    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/b27d1276-bdaa-4ab9-926e-e67b78cfbf46" alt="分支合并冲突">
+</div>  
+
+接下来就合并成功了。  
+<div align="center">
+    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/5b5340c5-270f-4a55-8d6c-3312b5734728" alt="分支合并冲突">  
+</div>  
+
+总结：将git合并失败的文件手动编辑为我们想要的内容，再提交。  
+
 
 ## 遇到了问题：
 在将本地仓库同步到远程仓库的时候，发现进行remote add连接之后，push命令不能直接使用，错误信息显示必需先pull一下，把GitHub上的文件拉下来，pull仍然会报错，这是因为在创建repo的时候添加了readme文件，所以不是一个空的分支，必须把两个不相关的库进行合并才可以进行下一步操作。  
