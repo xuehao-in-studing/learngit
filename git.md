@@ -114,6 +114,11 @@ git 如果没有add，那么文件的修改就不会加入到暂存区，也就�
 这个命令相当于创建并切换，切换到dev分支。  
 等于：`git branch dev`+`git checkout/switch dev`  
 
+创建的新分支都是空的：  
+<div align="center">
+    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/3b044ba1-27eb-4778-b22a-67eb4898de75" alt="创建的分支">
+</div>  
+
 **查看分支**：`git branch`  
 这个命令会列出所有分支，当前分支会标一个*。  
 
