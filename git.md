@@ -120,7 +120,10 @@ git 如果没有add，那么文件的修改就不会加入到暂存区，也就�
 </div>  
 
 **查看分支**：`git branch`  
-这个命令会列出所有分支，当前分支会标一个*。  
+这个命令会列出所有分支，当前分支会标一个*。 
+<div align="center">
+    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/07e32ff6-bb37-45c1-b11f-7e205a3984bc" alt="查看分支">
+</div>   
 
 **合并分支**：`git merge dev`  
 合并指定分支到当前分支上。
