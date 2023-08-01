@@ -125,6 +125,12 @@ git 如果没有add，那么文件的修改就不会加入到暂存区，也就�
     <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/07e32ff6-bb37-45c1-b11f-7e205a3984bc" alt="查看分支">
 </div>   
 
+分支互不干扰，在master分支下无法查看new分支下的内容。newbranch.txt仅仅在new分支下存在，而在master分支下不存在。
+<div align="center">
+    <img src="https://github.com/xuehao-in-studing/learngit/assets/102791379/d1f981db-6d74-4cad-93c7-e54aa36119ed" alt="分支互不干扰">
+</div>  
+因此，可以通过的分支合并来合并两个分支的工作内容。  
+
 **合并分支**：`git merge dev`  
 合并指定分支到当前分支上。
 
