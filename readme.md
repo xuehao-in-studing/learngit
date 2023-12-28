@@ -28,3 +28,6 @@
 
 ![image](https://github.com/xuehao-in-studing/learngit/assets/102791379/f68a6b44-8e41-4af0-aed5-859fdcbbeb0c)
 ![image](https://github.com/xuehao-in-studing/learngit/assets/102791379/62230e19-ad7d-4b4f-b6eb-46edb5cacf79)
+
+
+本地进行删除，远程仓库不变，然后从远程pull，看是或否会覆盖。
